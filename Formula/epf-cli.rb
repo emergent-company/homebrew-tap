@@ -5,21 +5,21 @@
 class EpfCli < Formula
   desc "CLI tool for the Emergent Product Framework (EPF) — validation, health checks, and MCP tooling for AI-assisted strategy"
   homepage "https://github.com/emergent-company/emergent.strategy"
-  version "0.18.1"
+  version "0.19.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/emergent-company/emergent.strategy/releases/download/v0.18.1/epf-cli_0.18.1_darwin_amd64.tar.gz"
-      sha256 "a9ed8c32cac95187b05782cc07f2145cac998a2e98ec9c1fcce065d9c0025cc8"
+      url "https://github.com/emergent-company/emergent.strategy/releases/download/v0.19.0/epf-cli_0.19.0_darwin_amd64.tar.gz"
+      sha256 "e2dcafa6e1477f0c6e40aa57de3e7a3755b02734843b7911d0221fb5d4197a74"
 
       def install
         bin.install "epf-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/emergent-company/emergent.strategy/releases/download/v0.18.1/epf-cli_0.18.1_darwin_arm64.tar.gz"
-      sha256 "3291dbc2aa7fd3d75f6bad5451dbb564db54081ba79fab92e55008d9cdc2afb3"
+      url "https://github.com/emergent-company/emergent.strategy/releases/download/v0.19.0/epf-cli_0.19.0_darwin_arm64.tar.gz"
+      sha256 "d9bbbfb46f6975fb7e4c34a31d11f782a2e4a8b7191ce56b9cc3653309ba9f9e"
 
       def install
         bin.install "epf-cli"
@@ -29,15 +29,15 @@ class EpfCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/emergent-company/emergent.strategy/releases/download/v0.18.1/epf-cli_0.18.1_linux_amd64.tar.gz"
-      sha256 "10a39761445a967c4857620e95c6ff80bac1164c928e0d0ac2eee20f0467550e"
+      url "https://github.com/emergent-company/emergent.strategy/releases/download/v0.19.0/epf-cli_0.19.0_linux_amd64.tar.gz"
+      sha256 "59321756d6c6e91b80a3a9f8754fbedcab7ee99798d88f8a295b0b7d04231200"
       def install
         bin.install "epf-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/emergent-company/emergent.strategy/releases/download/v0.18.1/epf-cli_0.18.1_linux_arm64.tar.gz"
-      sha256 "3e01cb5eb03c2336d502d2346e44e030ab36b847dca70f2f150c5bafae3c3294"
+      url "https://github.com/emergent-company/emergent.strategy/releases/download/v0.19.0/epf-cli_0.19.0_linux_arm64.tar.gz"
+      sha256 "80d25b260453dfddcab59f05f1cfca733d76548804cb2ee0d518109317d4a0dd"
       def install
         bin.install "epf-cli"
       end

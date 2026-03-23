@@ -11,7 +11,7 @@ class EpfCli < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/emergent-company/emergent.strategy/releases/download/v0.43.4/epf-cli_0.43.4_darwin_amd64.tar.gz"
-      sha256 "1f9a69101f4cf16b76f366d52662d355e9caaa001735c4bf9685bdc976d5895b"
+      sha256 "ae28f61b4133beb8f6ee72f93f640e7453b56a6767d4f76866b3c9fdb3302b47"
 
       define_method(:install) do
         bin.install "epf-cli"
@@ -19,7 +19,7 @@ class EpfCli < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/emergent-company/emergent.strategy/releases/download/v0.43.4/epf-cli_0.43.4_darwin_arm64.tar.gz"
-      sha256 "cf7ed41130a2406f11821842ce7bb2a2a45da664da09b19839bed671e4f50d32"
+      sha256 "5b65f42b957d14e63a6432a6c8bed652e57da40e5b7af0996da2ebf2f5550b59"
 
       define_method(:install) do
         bin.install "epf-cli"
@@ -30,14 +30,14 @@ class EpfCli < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/emergent-company/emergent.strategy/releases/download/v0.43.4/epf-cli_0.43.4_linux_amd64.tar.gz"
-      sha256 "1d48ad72b532679f928af097d1d0a0105161f5215d278ac5139635f8e1c9010e"
+      sha256 "26136c119940fa0ac1236576bbf2651d79164720ad5bbfe9d102b55d3c5f6410"
       define_method(:install) do
         bin.install "epf-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/emergent-company/emergent.strategy/releases/download/v0.43.4/epf-cli_0.43.4_linux_arm64.tar.gz"
-      sha256 "d80b7a5a7f56341ec4ea4c934498903b01a41b8d0f0c540a93d7cb40d0df22aa"
+      sha256 "8a371d132584b6493d6fecce838d1d365021a97f224d4cacea892f600deb9955"
       define_method(:install) do
         bin.install "epf-cli"
       end
